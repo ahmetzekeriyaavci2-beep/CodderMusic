@@ -1,0 +1,15 @@
+:root{--bg:#0f1720;--card:#111827;--accent:#60a5fa;--muted:#94a3b8}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(180deg,var(--bg),#071129);color:#e6eef8;font-family:Inter,system-ui,Arial;padding:20px;display:flex;align-items:center;justify-content:center}
+.player{width:100%;max-width:720px;background:rgba(255,255,255,0.03);padding:18px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.now{display:flex;gap:12px;align-items:center}
+.now img{width:90px;height:90px;border-radius:8px;object-fit:cover;filter:grayscale(10%)}
+.meta{font-size:14px}
+.meta #title{font-weight:700;font-size:18px}
+.controls{display:flex;gap:8px;align-items:center;margin-top:12px}
+.controls button{padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#072033;font-weight:700;cursor:pointer}
+.controls input[type="range"]{flex:1}
+.playlist{list-style:none;padding:0;margin-top:14px;max-height:260px;overflow:auto}
+.playlist li{padding:10px;border-radius:8px;margin-bottom:8px;background:rgba(255,255,255,0.02);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.playlist li.active{outline:2px solid rgba(96,165,250,0.25)}
+@media(max-width:520px){.now img{width:64px;height:64px}}

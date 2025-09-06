@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PRO CODDER Music</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="player">
+    <h1>PRO CODDER — Müzik</h1>
+
+    <div class="now">
+      <img id="cover" src="cover1.jpg" alt="cover" />
+      <div class="meta">
+        <div id="title">Seç bir parça</div>
+        <div id="artist">PRO CODDER Koleksiyonu</div>
+      </div>
+    </div>
+
+    <audio id="audio" preload="metadata"></audio>
+
+    <div class="controls">
+      <button id="prev">◀◀</button>
+      <button id="play">▶</button>
+      <button id="next">▶▶</button>
+      <input id="seek" type="range" min="0" max="100" value="0">
+      <span id="time">0:00 / 0:00</span>
+    </div>
+
+    <ul id="playlist" class="playlist">
+      <!-- JS ile doldurulacak -->
+    </ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
